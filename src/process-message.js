@@ -18,8 +18,6 @@ const sessionClient = new dialogflow.SessionsClient(config);
 
 const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
-// Remember the Page Access Token you got from Facebook earlier?
-// Don't forget to add it to your `variables.env` file.
 const { FACEBOOK_ACCESS_TOKEN } = process.env;
 
 const sendTextMessage = (userId, text) => {
